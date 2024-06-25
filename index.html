@@ -15,7 +15,9 @@
       <div class="product-display">
         <div class="product-container">
           <div class="product-image">
-            <!-- image goes here -->
+            <!-- v-bind directive - dynamically bind an attribute to an expression -->
+            <img :src="image">
+            <a :href="url" target="_blank">Buy</a>
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
